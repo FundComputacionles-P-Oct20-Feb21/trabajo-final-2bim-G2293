@@ -1,0 +1,126 @@
+inicio
+   funcion principal()
+        bandera <-- true
+        d, i[0-n]
+        i, i[0-n]
+        mientras bandera entonces
+            << Ingresar la cuenta que deseas crear:\n(1) para crear Facebook\n(2) para crear Whatsapp\n(3) para crear Telegram\n(4) para crear Signal\n(5) para crear Instagram\n(6) para crear Flickr\n(7) para crear Twitter >> d
+        dependiendo_de (d) entonces
+          Opcion 1 
+              crearFacebook()
+          fin
+          Opcion 2
+              crearWhatsapp()
+          fin
+          Opcion 3 
+              crearTelegram()
+          fin
+          Opcion 4 
+              crearSignal()
+          fin
+          Opcion 5 
+              crearInstagram()
+          fin
+          Opcion 6 
+              crearFlickr()
+          fin
+          Opcion 7 
+              crearTwitter()
+          fin
+          Fin dependiendo_de
+          i <--i + 1
+          <<"Ingresar 0 para no ingrasar mas cuentas""
+          >> d
+          Si d== 0 entonces
+               bandera <-- false
+          Fin si
+     fin mientras
+     obtenermensaje(i)
+  fin funcion principal
+  funcion crearFacebook()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          e, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          p, x(50)[{a-z}, {A-Z}, {BS}]
+          c, x(50)[{a-z}, {A-Z}, {BS}]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su edad: ">> e
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su pais: ">> p 
+          << "Ingresar su correo electronico: ">> c
+  fin crearFacebook
+  funcion crearWhatsapp()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          e, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          p, x(50)[{a-z}, {A-Z}, {BS}]
+          t, i[0-n]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su edad: ">> e
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su pais: ">> p 
+          << "Ingresar su numero telefocino: ">> t
+  fin crearWhatsapp
+  funcion crearTelegram()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          t, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          p, x(50)[{a-z}, {A-Z}, {BS}]
+          a, x(50)[{a-z}, {A-Z}, {BS}]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su numero telefonico: ">> t
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su pais: ">> p 
+          << "Ingresar su area de interes: ">> a
+  fin crearTelegran
+  funcion crearSignal()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          t, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          p, x(50)[{a-z}, {A-Z}, {BS}]
+          h, i[0-n]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su numero telefonico: ">> t
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su pais: ">> p 
+          << "Ingresar su hobby: ">> h
+  fin crearSignal
+ funcion crearInstagram()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          e, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          c, x(50)[{a-z}, {A-Z}, {BS}]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su edad: ">> e
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su correo electronico: ">> c
+  fin creaInstagram
+funcion crearFlickr()
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          c, x(50)[{a-z}, {A-Z}, {BS}]
+          << "Ingresar su nombre: ">> n
+          << "Ingresar su correo electronico: ">> c
+  fin creaFlickr
+funcion crearTwitter()
+          u, x(50)[{a-z}, {A-Z}, {BS}]
+          n, x(50)[{a-z}, {A-Z}, {BS}]
+          ap, x(50)[{a-z}, {A-Z}, {BS}]
+          e, i[0-n]
+          ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+          i, x(50)[{a-z}, {A-Z}, {BS}]
+          p, x(50)[{a-z}, {A-Z}, {BS}]
+          c, x(50)[{a-z}, {A-Z}, {BS}]
+          << "Ingresar su nombre de usuario: ">> u
+          << "Ingresar su dos nombre: ">> n
+          << "Ingresar su dos apellidos: ">> ap
+          << "Ingresar su edad: ">> e
+          << "Ingresar su ciudad: ">> ciudad
+          << "Ingresar su pais: ">> p
+          << "Ingresar su idioma: ">> i
+          << "Ingresar su correo electronico: ">> c
+  fin creaTwitter
+ funcion MensageFinal
+ (mensajefinal(3), x(300)[{A-Z}, {a-z}, {BS}])
+  mensajefinal <--{"Campaña con poca fluencia", "Campaña moderada siga adelante", "Excelente campaña"} 
+  fin fincion mensajefinal
+fin
